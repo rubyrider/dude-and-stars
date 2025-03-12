@@ -33,6 +33,18 @@ export class Preloader extends Scene
         this.load.setPath('assets');
 
         this.load.image('logo', 'logo.png');
+
+        this.load.image('spaceship', 'dino.gif'); // Load the spaceship image
+
+        this.load.image('rock', 'rock.png'); // Load the rock image
+
+        this.load.spritesheet('moons', 'CelestialObjects.png', { frameWidth: 32, frameHeight: 32, startFrame: 12 }); // Load the moons spritesheet
+        this.load.spritesheet('dwarfStars', 'CelestialObjects.png', { frameWidth: 32, frameHeight: 32, startFrame: 16 }); // Load the dwarf stars spritesheet
+        this.load.spritesheet('asteroids', 'CelestialObjects.png', { frameWidth: 64, frameHeight: 64, startFrame: 20 }); // Load the asteroids spritesheet
+        this.load.spritesheet('starClusters', 'CelestialObjects.png', { frameWidth: 64, frameHeight: 64, startFrame: 24 }); // Load the star clusters spritesheet
+        this.load.spritesheet('nebulae', 'CelestialObjects.png', { frameWidth: 64, frameHeight: 64, startFrame: 27 }); // Load the nebulae spritesheet
+        this.load.spritesheet('blackHole', 'CelestialObjects.png', { frameWidth: 64, frameHeight: 64, startFrame: 29 }); // Load the black hole spritesheet
+
     }
 
     create ()
